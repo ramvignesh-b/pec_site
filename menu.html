@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Home</title>
+<link href="css/bootstrap-4.3.1.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="header.css">
+<link rel="stylesheet" href="css/menu.css">
+<link rel="stylesheet" href="css/icon.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+<div class="container-fluid container-dim">
+  <div class="row" id="row-top-margin"> 
+    <!-- image start!-->
+    <div class="logo-container" > <img  class="logo"  src="img/logo.png" alt="logo_image" width="100"  > </div>
+    <!--image end--> 
+    
+    <!--college Name start-->
+    <div class="college_name">
+      <h4 class="college-name-text">PONDICHERRY</h4>
+      <br>
+      <h4 class="college-name-text">ENGINEERING</h4>
+      <br>
+      <h4 class="college-name-text">COLLEGE</h4>
+    </div>
+    <!--College Name End--> 
+    
+    <!--department name start-->
+    <div class="dept-name" id="dept-name">
+      <h4 class="dept-of">DEPARTMENT <i>of</i></h4>
+      <h4 class="dept-name-text">Computer Science and Engineering</h4>
+    </div>
+    <!--department name end--> 
+    
+    <!-- Search Box  start-->
+    <div class="search-box float-right" style="position: absolute;right: 100px">
+      <form>
+        <input type="text" placeholder="Search">
+        <img src="img/search-icon.png">
+      </form>
+    </div>
+    <!-- search Box End --> 
+    
+    <!-- Adding hamburger menu start -->
+    <div class="container" id="ham" onclick="myFunction(this)" align="right" style="position: absolute;right: 40px; padding-top: 20px;">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    
+    <!-- hamburger menu end --> 
+    
+  </div>
+</div>
+<hr style="margin: 0 2%;border-width: 2px;">
+<br>
+<!-- =========================================== PC Menu ===========================================-->
+<div id="tab1">
+  <nav class="navbar navbar-expand-lg navbar-light nav-link1"  >
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent1" style="margin: 0px; background: white; text-align: center;">
+      <ul class="navbar-nav " style="padding-right: 20px;margin: auto" >
+        <li class="nav-item" > <a class="nav-link " href="#" style="padding-right: 20px;">IIS<i class="material-icons">
+exit_to_app
+</i></a> </li>
+        <li class="nav-item"><a class="nav-link" href="#" style="padding-right: 20px;">PLACEMENTS<i class="material-icons">
+exit_to_app
+</i></a></li>
+        <li class="nav-item"> <a class="nav-link" href="#" style="padding-right: 20px;">RESOURCES</a> </li>
+        <li class="nav-item"><a class="nav-link" href="#" style="padding-right: 20px;">ALUMNI NETWORK</a></li>
+        <li class="nav-item" > <a class="nav-link" href="#" style="padding-right: 20px;">PEC OPEN ACCESS<i class="material-icons">
+exit_to_app
+</i></a> </li>
+        <li class="nav-item"><a class="nav-link" href="#" style="">CMS&nbsp;<i class="material-icons">vpn_key</i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <hr style="margin-left: 2%; margin-right: 2%; border-width: 2px;">
+  <div class="tab" >
+    <button class="tablinks" onmouseover="openTab(event, 'about')">ABOUT</button>
+    <button class="tablinks" onmouseover="openTab(event, 'gallery')">GALLERY</button>
+    <button class="tablinks" id="oc"  onmouseover="openTab(event, 'oncampus')">ON CAMPUS</button>
+    <button class="tablinks" onmouseover="openTab(event, 'academics')">ACADEMICS</button>
+    <button class="tablinks" onmouseover="openTab(event, 'admin')">ADMINISTRATION</button>
+    <button class="tablinks" onmouseover="openTab(event, 'teqip')">TEQIP</button>
+    <button class="tablinks" onmouseover="openTab(event, 'admission')">ADMISSIONS</button>
+    <button class="tablinks" onmouseover="openTab(event, 'archive')">ARCHIVE</button>
+  </div>
+  <div id="about" class="tabcontent" style="position: relative;">
+    <h3>ABOUT</h3>
+    <p>Pondicherry Engineering College (PEC) is an Institution sponsored by the Union Territory of Pondicherry, India. The College was started in 1984 under the VII Five Year Plan. It is an autonomous Institution for the purposes of administration, staff recruitment and College development and is managed by a Board of Governors.</p>
+  </div>
+  <div id="gallery" class="tabcontent">
+    <h3>GALLERY</h3>
+    <p style="display: inline-block"> <img src="../../Pictures/Saved Pictures/21-5cee99e02a3a3__700.jpg" alt="img1" height="200px"> <img src="../../Pictures/Saved Pictures/comics-mr-lovenstein-33-5c91f4ae24000__700.jpg" alt="img1" height="200px"></p>
+  </div>
+  <div id="oncampus" class="tabcontent2">
+    <div class="tab" style="width:30%">
+      <button class="tablinks2" onmouseover="openTab2(event, 'camplife', 'oncampus')">Campus Life</button>
+      <button class="tablinks2" onmouseover="openTab2(event, 'commitees', 'oncampus')">Commitees</button>
+      <button class="tablinks2" onmouseover="openTab2(event, 'cells', 'oncampus')">Cells</button>
+      <button class="tablinks2" onClick="drop(event, 'drop')" title="Click to see clubs" onmouseover="openTab2(event, 'clubs', 'oncampus')">Clubs &nbsp;&nbsp;<i class="glyphicon glyphicon-chevron-down"></i></button>
+      <div class="drop" id="drop">
+        <button class="tablinks2" onMouseOver="openTab2(event, 'dc', 'oncampus')">Design Club</button>
+        <button class="tablinks2" onMouseOver="openTab2(event, 'pc', 'oncampus')">Photography Club</button>
+        <button class="tablinks2" onMouseOver="openTab2(event, 'lit', 'oncampus')">Literary Club</button>
+      </div>
+      <button class="tablinks2" onmouseover="openTab2(event, 'chapters', 'oncampus')">Chapters</button>
+      <button class="tablinks2" onmouseover="openTab2(event, 'facilities', 'oncampus')">Facilities</button>
+      <button class="tablinks2" onmouseover="openTab2(event, 'events', 'oncampus')">Events</button>
+    </div>
+    <div id="camplife" class="tabcontent2">
+      <h3>Campus Life</h3>
+      <p>This campus has no life, lol!</p>
+    </div>
+    <div id="commitees" class="tabcontent2">
+      <h3>Commitees</h3>
+      <p>...................................</p>
+    </div>
+    <div id="cells" class="tabcontent2">
+      <h3>Cells</h3>
+      <p>++++++++++++++++++++++++++++++++++</p>
+    </div>
+    <div id="clubs" class="tabcontent2">
+      <h3>Clubs</h3>
+      <p>++++++++++++++++++++++++++++++++++</p>
+    </div>
+    <div id="dc" class="tabcontent2">
+      <h3>Design Club</h3>
+      <p>:) :) :) :) :) :) </p>
+    </div>
+    <div id="pc" class="tabcontent2">
+      <h3>Photography Club</h3>
+      <p>📸🎥🤳</p>
+    </div>
+    <div id="lit" class="tabcontent2">
+      <h3>Literary Club</h3>
+      <p>📚🖊✒📝✏</p>
+    </div>
+    <div id="chapters" class="tabcontent2">
+      <h3>Chapters</h3>
+      <p>++++++++++++++++++++++++++++++++++</p>
+    </div>
+    <div id="events" class="tabcontent2">
+      <h3>Events</h3>
+      <p>++++++++++++++++++++++++++++++++++</p>
+    </div>
+    <div id="facilities" class="tabcontent2">
+      <h3>Facilities</h3>
+      <p>++++++++++++++++++++++++++++++++++</p>
+    </div>
+  </div>
+</div>
+<!-- ===========================================Mobile Menu===========================================-->
+<div id="m_ham" style="position: fixed; bottom: 80px; right: 40px;"><i class="material-icons">search</i>&nbsp;<i class="material-icons" onClick="ham('m_ham','nbut','tab12')">menu</i></div>
+<div id="tab12"> <br>
+  <div class="av-link" id="">
+    <ul class="navbar-nav mr-auto navbar-light" style="margin-left: 40px" >
+      <li class="nav-item" > <a class="mnav-link " href="#" >IIS<span >&nbsp;</span></a> </li>
+      <br>
+      <li class="nav-item"><a class="mnav-link" href="#">PLACEMENTS</a></li>
+      <br>
+      <li class="nav-item"><a class="mnav-link" href="#">RESOURCES</a></li>
+      <br>
+      <li class="nav-item"><a class="mnav-link" href="#">ALUMNI NETWORK</a></li>
+      <br>
+      <li class="nav-item"><a class="mnav-link" href="#">PEC OPEN ACCESS</a></li>
+      <br>
+      <li class="nav-item"><a class="mnav-link" href="#">CMS 🔑</a></li>
+      <br>
+    </ul>
+    <br>
+  </div>
+  <div id="other" onClick="show(event,'tab22', 'tab12')" style="font-size: 15px"><span>| Departments | Admissions | Gallery | <br>
+    OnCampus | and more...</span></div>
+</div>
+<br>
+<div class="av-link" id="tab22"> <br>
+  <ul class="navbar-nav mr-auto navbar-light" style="margin-left: 40px; " >
+    <li class="nav-item" > <a class="mnav-link" href="#" >ABOUT<span >&nbsp;</span></a> </li>
+    <br>
+    <li class="nav-item"><a class="mnav-link" href="#" >GALLERY</a></li>
+    <br>
+    <li class="nav-item"><a class="mnav-link" href="#" onClick="show(event, 'tab32', 'tab22')">ON CAMPUS</a></li>
+    <br>
+    <li class="nav-item"><a class="mnav-link" href="#" onClick="show(event, 'tab42', 'tab22')">ACADEMICS</a></li>
+    <br>
+    <li class="nav-item"><a class="mnav-link" href="#">ADMINISTRATION</a></li>
+    <br>
+    <li class="nav-item"><a class="mnav-link" href="#">TEQIP</a></li>
+    <br>
+    <li class="nav-item"><a class="mnav-link" href="#">ADMISSIONS</a></li>
+    <br>
+    <li class="nav-item"><a class="mnav-link" href="#">ARCHIVE</a></li>
+    <br>
+  </ul>
+  <br>
+  <hr>
+</div>
+<div class="text-center mnav navbar-fixed-bottom" id="nbut" style="position: fixed; bottom: 0px;background: white; width: 100%; display: none">
+  <div style="float: left; padding: 10px; width: 33% ">
+    <button class="navig" style="left: 20px;" onClick="show(event,'tab12','tab22')"> <i class="material-icons"> arrow_back </i> </button>
+  </div>
+  <div class="navig" onClick="hide('tab12','nbut', 'tab22'),show('','m_ham')" style="padding:10px; width: 53%;float: right; text-align: left"><i class="material-icons"> close </i></div>
+</div>
+<div class="av-link tab3" id="tab32"> <span style="border-left: 3px solid teal; margin-left: 20px; padding-left: 20px;">On Campus</span>
+  <ul class="navbar-nav mr-auto navbar-light" style="margin-left: 40px; " >
+    <li class="nav-item" > <a class="mnav-link" href="#" >Campus Life<span >&nbsp;</span></a> </li>
+    <br>
+    <li class="nav-item"><a class="mnav-link" href="#" >Committees</a></li>
+    <br>
+    <li class="nav-item" id="cel"><a class="mnav-link" href="#" onClick="drop(event, 'tab40'), hide('tab41'), inactive('clu')">Cells</a></li>
+    <br>
+    <div style="margin-left: 20px; display: none; background: #ccc; border-radius: 16px" id="tab40">
+      <li class="nav-item"><a class="mnav-link gr" href="#" >Cell1</a></li>
+      <br>
+      <li class="nav-item"><a class="mnav-link gr" href="#">Cell2</a></li>
+      <br>
+      <li class="nav-item"><a class="mnav-link gr" href="#">Cell3</a></li>
+      <br>
+    </div>
+    <li class="nav-item" id="clu"><a class="mnav-link"  onClick="drop(event, 'tab41'), hide('tab40'), inactive('cel')" href="#">Clubs</a></li>
+    <br>
+    <div style="margin-left: 20px; display: none; background: #ccc; border-radius: 16px" id="tab41">
+      <li class="nav-item"><a class="mnav-link gr" href="#" >Design Club</a></li>
+      <br>
+      <li class="nav-item"><a class="mnav-link gr" href="#">Photography Club</a></li>
+      <br>
+      <li class="nav-item"><a class="mnav-link gr" href="#">Literary Club</a></li>
+      <br>
+    </div>
+    <li class="nav-item"><a class="mnav-link" href="#">Chapters</a></li>
+    <br>
+    <li class="nav-item"><a class="mnav-link" href="#">Facilities</a></li>
+    <br>
+    <li class="nav-item"><a class="mnav-link" href="#">Events</a></li>
+    <br>
+    <li class="nav-item"><a class="mnav-link" href="#"></a></li>
+    <br>
+  </ul>
+  <br>
+  <hr>
+  <div class="text-center navbar-fixed-bottom" id="nbut2" style="position: fixed; bottom: 0px;background: white; width: 100%; display: inline;z-index: 99;">
+    <div style="float: left; padding: 10px; width: 33% ">
+      <button class="navig" style="left: 20px;" onClick="show('','tab22','tab32')"> <i class="material-icons"> arrow_back </i> </button>
+    </div>
+    <div class="navig" onClick="hide('tab12','nbut', 'tab22', 'tab32', 'tab42'),show('','m_ham')" style="padding:10px; width: 53%;float: right; text-align: left"><i class="material-icons"> close </i></div>
+  </div>
+</div>
+<div class="av-link tab3" id="tab42" style="display: none">
+  <div style="margin-bottom: 40px;"><span style="border-left: 3px solid teal; margin-left: 20px; padding-left: 20px;">Academics</span>
+    <ul class="navbar-nav mr-auto navbar-light" style="margin-left: 40px; "  >
+      <li class="nav-item mnav-link" > <a class="nou" href="#" >Computer Science and Engineering</a> </li>
+      <br>
+      <li class="nav-item"><a class="mnav-link" href="#" >Mechanical Engineering</a></li>
+      <br>
+      <li class="nav-item"><a class="mnav-link" href="#" onClick="drop(event, 'tab50')">Humanities and Science</a></li>
+      <br>
+      <div style="margin-left: 20px; display: none; background: #ccc; border-radius: 16px" id="tab50">
+        <li class="nav-item"><a class="mnav-link gr" href="#" >Humanities</a></li>
+        <br>
+        <li class="nav-item"><a class="mnav-link gr" href="#">Physics</a></li>
+        <br>
+        <li class="nav-item"><a class="mnav-link gr" href="#">Chemistry</a></li>
+        <br>
+      </div>
+      <li class=" mnav-link"><a class="nou" href="#">Electronics and Communication Engineering</a></li>
+      <br>
+      <li class=" mnav-link"><a class="nou" href="#">Electronics and Instrumentation Engineering</a></li>
+      <br>
+      <li class="nav-item mnav-link"><a class="nou" href="#">Electrical and Electronics Engineering</a></li>
+      <br>
+      <li class="nav-item"><a class="mnav-link" href="#">Civil Engineering</a></li>
+      <br>
+      <li class="nav-item"><a class="mnav-link" href="#">Information Technology</a></li>
+      <br>
+    </ul>
+  </div>
+  <br>
+  <hr>
+  <div class="text-center navbar-fixed-bottom" id="nbut1" style="position: fixed; bottom: 0px;background: white; width: 100%; display: inline;z-index: 99;">
+    <div style="float: left; padding: 10px; width: 33% ">
+      <button class="navig" style="left: 20px;" onClick="show('','tab22','tab32','tab42')"> <i class="material-icons"> arrow_back </i></button>
+    </div>
+    <div class="navig" onClick="hide('tab12','nbut', 'tab22', 'tab32','tab42'),show('','m_ham')" style="padding:10px; width: 53%;float: right; text-align: left"><i class="material-icons"> close </i></div>
+  </div>
+</div>
+<script src="js/menu.js">
+
+</script> 
+<script src="js/jquery-3.3.1.min.js"></script> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.3.1.js"></script>
+</body>
+</html>
