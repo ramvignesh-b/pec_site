@@ -34,8 +34,11 @@ a {
   #m_ham {
     display: block;
   }
+  #mobile_container{
+    display: block !important;
+  }
 }
-@media only screen and (min-width:600px) {
+@media (min-width:600px) {
   .mnav {
     display: none;
   }
@@ -56,6 +59,9 @@ a {
   }
 }
 #tab22 {
+  display: none;
+}
+#mobile_container{
   display: none;
 }
 #other {
@@ -154,6 +160,7 @@ a {
   .tab {
     font-size: 15px !important;
   }
+
 }
 h3 {
   font-family: TimesNewRomanPSMT;
@@ -260,6 +267,9 @@ h3 {
     margin-left: 0px !important;
     padding-right: 20px !important;
     font-size: 14px !important;
+  }
+  #tab1{
+    display: none !important;
   }
 }
 #drop {
